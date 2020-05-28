@@ -1,0 +1,265 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge Gopal Menon}\\\medskip % Your name
+	{\Huge\color{headings} Senior Software Engineer}
+}
+
+%----------------------------------------------------------------------------------------
+%	MAJOR RESEARCH PROJECT
+%----------------------------------------------------------------------------------------
+
+\section{Profile}
+
+{\raggedright\textbf{Passionate, self-motivated and committed developer, with more than two decades of experience in writing maintainable and high performance software.}\\\medskip}
+Expert Java backend web developer with solution modeling skills used in communicating design to other developers. Currently
+working in one of many Agile teams in developing software that helps manufacturers in maintaining electronic batch records, quality assurance, document workflow and training. Have also extensively worked on Revenue Cycle, Clinical and Financial applications of Community Hospital software.\\\medskip
+
+Improved application performance by making parts concurrent. Enabled customer support representatives to provide better assistance to clients by giving them the ability to identify communication failures. Perform code reviews and provide suggestions to improve quality of software. Extensive experience in development, maintenance, test driven development, production support, technical designs, implementations, customizations and obtaining user requirements.\\\medskip
+
+Enjoy learning new algorithms, programming languages and technologies. Am a fast learner and am sure will be able to contribute significantly to any organization. 
+\medskip % Extra whitespace before the next section
+
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Professional EXPERIENCE}
+
+% Blank \workposition command to add another job:
+
+%\workposition{} % Duration
+%{} % FT/PT (full time or part time)
+%{} % Employer
+%{} % Job title
+%{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+\workposition{Current, from Apr 2019} % Duration
+{FT} % FT/PT (full time or part time)
+{MasterControl} % Employer
+{Senior Software Engineer} % Job title
+{Work as part of an Agile team, comprising of an engineering manager, software and QA engineers to develop software using Java, Spring, Mockito, Rest APIs, MS SQL Server and Angular in bi-weekly sprints. Job responsibilities include story point estimation, development of software with associated unit tests, source code reviews, fixing defects, unit testing and fixing failures in build pipeline. } % Description
+
+\workposition{Jan 1999 -- Mar 2019} % Duration
+{FT} % FT/PT (full time or part time)
+{NTT Data Inc. at Cerner MedSeries 4} % Employer
+{Senior Software Developer} % Job title
+{Work closely with Cerner project managers, subject matter experts and other team members to understand requirements and functional design and develop solutions. Removed roadblocks for offshore team. Do code reviews, technical designs and technical design reviews. Improved quality of functional designs by bridging the impedance mismatch between subject matter experts and developers and improved software performance by using concurrency and reduced application downtime by providing communication traces. Inherited and maintained complex user interface code after key team member left. Significantly improved performance of complex slow user interface code.} % Description
+
+
+%------------------------------------------------
+\switchcolumn % Switch to the next paracol column
+
+
+%----------------------------------------------------------------------------------------
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.03\linewidth}|p{0.94\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\raisebox{-1pt}{\faHome} & 10269 Locust Ridge Ct, South Jordan, UT 84009-7143 \\ % Address
+			\raisebox{-1pt}{\faPhone} & +1 (801) 597-3975 \\ % Phone number
+			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:gopal.mnn@gmail.com}{gopal.mnn@gmail.com} \\ % Email address
+			\raisebox{-1pt}{\small\faDesktop} & \href{https://github.com/gopalmenon}{https://github.com/gopalmenon} \\ % Website
+			\raisebox{-1pt}{\small\faDesktop} & \href{https://www.linkedin.com/in/gopal-menon-utah}{https://www.linkedin.com/in/gopal-menon-utah} \\ % Website
+			%\raisebox{-1pt}{\faGithub} & \href{https://github.com/username}{https://github.com/username} \\ % GitHub profile 
+			%\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/username} \\ % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+
+\workposition{Oct 1991 -- Dec 1998} % Duration
+{FT} % FT/PT (full time or part time)
+{Tata Consultancy Services} % Employer
+{Manager of Projects} % Job title
+{Had roles ranging from iSeries developer to Manager of Projects for various development, maintenance and conversion projects for clients in Europe, USA and Latin America. Also did code reviews, was part of the quality processes compliance audit team and did contract reviews. Got business requirements in order to customize and implement high inflation resilient software in five countries in Latin America over a period of two years. Learnt Spanish on the job as I had to interact with clients who did not speak English.}  % Description
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	%------------------------------------------------
+	
+	\educationentry{2016 -- 2018} % Duration
+	{Big Data Certificate} % Degree
+	{} % Honours, achievements or distinctions (e.g. first class honours)
+	{Computer Science Department} % Department
+	{University of Utah} % Institution
+	%------------------------------------------------
+	
+	\educationentry{2014 -- 2016} % Duration
+	{Master of Science} % Degree
+	{} % Honours, achievements or distinctions (e.g. first class honours)
+	{Computer Science} % Department
+	{Utah State University} % Institution
+	%------------------------------------------------
+	
+	\educationentry{2011 -- 2012} % Duration
+	{Master of Science} % Degree
+	{} % Honours, achievements or distinctions (e.g. first class honours)
+	{Information Systems} % Department
+	{University of Utah} % Institution
+
+	%------------------------------------------------
+	
+	\educationentry{1984 -- 1989} % Duration
+	{Bachelor of Technology} % Degree
+	{} % Honours, achievements or distinctions (e.g. first class honours)
+	{Electronics and Communications Engineering} % Department
+	{University of Kerala, India} % Institution
+	
+
+	
+
+	
+	%------------------------------------------------
+
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	Certs
+%----------------------------------------------------------------------------------------
+
+\section{Certifications}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{2005}{\textbf{Project Management Professional} (lapsed)}{}
+	\tableentry{}{\textit{Project Management Institute}}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{2005}{\textbf{Sun Certified Web Component Developer}}{}
+	\tableentry{}{\textit{Sun Microsystems}}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{2003}{\textbf{Sun Certified Java Programmer}}{}
+	\tableentry{}{\textit{Sun Microsystems}}{spaceafter}
+	
+	%------------------------------------------------	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{TECHNICAL SKILLS} 
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{Languages}{Java, JSP, JavaScript, HTML, RPG, SQL - Expert}{}
+	\tableentry{}{Spring, Mockito, R, C++, Struts, CSS,}{}
+	\tableentry{}{\LaTeX - Intermediate}{}
+	\tableentry{}{Angular, Golang, Rust, C, Python - Beginner}{spaceafter}
+	%------------------------------------------------
+	
+	\tableentry{Database}{IBM DB2, MS SQL Server}{spaceafter}
+	%------------------------------------------------	
+	\tableentry{Tools}{Websphere, Git, ClearCase, Postman, Version 1}{}
+	\tableentry{}{IntelliJ, EclipseMS Project}{}
+	%------------------------------------------------
+	
+\end{supertabular}
+
+
+\end{paracol}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
