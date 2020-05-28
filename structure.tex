@@ -19,7 +19,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\usepackage{etoolbox} % Required for conditional statements
+\usepackage{etoolbox} % Required for conditional statements
 
 \setlength\parindent{0pt} % Stop paragraph indentation
 
@@ -115,7 +115,7 @@ SmallCapsFont=*-SC.ttf
 
 \titleformat{\section}{\color{headings}\scshape\LARGE\raggedright}{}{0em}{}[\color{black}\titlerule] % Define the \section format
 
-\titlespacing{\section}{0pt}{0pt}{8pt} % Spacing around section titles, the order is: left, before and after
+\titlespacing{\section}{0pt}{0pt}{2pt} % Spacing around section titles, the order is: left, before and after
 
 %----------------------------------------------------------------------------------------
 %	CUSTOM COMMANDS
@@ -125,8 +125,8 @@ SmallCapsFont=*-SC.ttf
 \newcommand{\workposition}[5]{
 	{\raggedleft\textsc{#1\expandafter\ifstrequal\expandafter{#2}{}{}{\hspace{6pt}\footnotesize{(#2)}}}\par} % Duration and conditional full time/part time text
 	\expandafter\ifstrequal\expandafter{#3}{}{}{{\raggedright\large #3}\\} % Employer
-	\expandafter\ifstrequal\expandafter{#4}{}{}{{\raggedright\large\textit{\textbf{#4}}}\\[4pt]} % Job title
-	\expandafter\ifstrequal\expandafter{#5}{}{}{#5\\} % Description
+	\expandafter\ifstrequal\expandafter{#4}{}{}{{\raggedright\large\textit{\textbf{#4}}}} % Job title
+	\expandafter\ifstrequal\expandafter{#5}{}{}{#5} % Description
 }
 
 % Command for entering a separate qualification
@@ -134,7 +134,7 @@ SmallCapsFont=*-SC.ttf
 	\textsc{#1} & \textbf{#2}\\ % Duration and degree
 	\expandafter\ifstrequal\expandafter{#3}{}{}{& {\small\textsc{#3}}\\} % Honours, achievements or distinctions (e.g. first class honours)
 	\expandafter\ifstrequal\expandafter{#4}{}{}{& #4\\} % Department
-	\expandafter\ifstrequal\expandafter{#5}{}{}{& \textit{#5}\\[6pt]} % Institution
+	\expandafter\ifstrequal\expandafter{#5}{}{}{& \textit{#5}\\[2pt]} % Institution
 }
 
 % Command for entering a separate table row -- used as a generic visual element for any section that uses a two column table
